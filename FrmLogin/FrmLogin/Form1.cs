@@ -16,5 +16,16 @@ namespace FrmLogin
         {
             InitializeComponent();
         }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            String username = textboxusername.Text;
+            String password = textboxmatkhau.Text;
+            if(username.Equals("admin") && password.Equals("admin"))
+            {
+                Form2 f = new Form2();
+                f.ShowDialog();
+            }
+        }
     }
 }
